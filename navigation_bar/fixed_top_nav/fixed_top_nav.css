@@ -1,0 +1,73 @@
+/* ==== GENERAL STYLES ==== */
+
+* {
+  box-sizing: border-box;
+}
+
+
+nav {
+  background-color: rgba(0,0,0,.9); /*==== én kódom: #000 ====*/
+  text-align: center; /*==== javasolt megoldásban ez a nav a-ra vonatkozik  ====*/
+  
+  padding: 1rem;
+  }
+a{
+  text-align: center;
+  color: #fff;
+  font-family: 'Space Mono', monospace; 
+  font-size: 1rem;
+  line-height: 2rem;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  display: block; 
+  }
+
+nav a:hover {
+  color: #c0c0c0;
+}
+
+
+.active {
+  border: 0.01rem solid;
+  border-color: #808080; 
+  border-radius: 9999px;
+}
+
+.active:hover {
+  background-color: #fff;
+  color: #000;
+  transition: background-color, color, 0.3s;
+}
+@media (min-width: 768px) {
+
+  @media (min-width: 768px) {
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+}
+@media (min-width: 768px) {
+
+  nav a {
+    float: right;
+  }
+
+  .home {
+    float: left;
+  }
+
+}
+@media (min-width: 768px) {
+
+  /* Clearfix */
+    nav::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+}
